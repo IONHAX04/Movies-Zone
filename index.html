@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>✨Movies Zone✨</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+	<div class="container">
+		<div class="card">
+			<div class="inner-box" id="card">
+				<div class="card-front">
+					<h2>LOGIN</h2>
+					<form>
+						<input type="email" class="input-box" placeholder="User name or Email ID" required>
+						<input type="password" class="input-box" placeholder="Password" required>
+						<button type="submit" class="submit-btn"><a href="index1.html">Submit</a></button>
+						<input type="checkbox"><span>Remember me?</span>
+					</form>
+
+					<button type="button" class="btn" onclick="openRegister()">I'm New here</button>
+					<a href="">Forgot Password</a>
+				</div>
+				<div class="card-back">
+					<h2>REGISTER</h2>
+					<form>
+						<input type="text" class="input-box" placeholder="Your Name" required>
+						<input type="email" class="input-box" placeholder="Email ID" required>
+						<input type="password" class="input-box" placeholder="Password" required>
+						<button type="submit" class="submit-btn"><a href="index1.html">Submit</a></button>
+						<input type="checkbox"><span>Remember me?</span>
+					</form>
+
+					<button type="button" class="btn" onclick="openLogin()">I've an account</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script>
+	var card = document.getElementById("card");
+	function openRegister(){
+		card.style.transform="rotateY(-180deg)";
+	}
+	function openLogin(){
+		card.style.transform="rotateY(0deg)";
+	}
+</script>
+</body>
+</html>
